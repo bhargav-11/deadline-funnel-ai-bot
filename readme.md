@@ -17,12 +17,13 @@ This project is designed to ingest data and run an application using Python.
 ## Data Ingestion
 To ingest all the data, follow these steps:
 1. Run the following command to ingest files:
+   Must be run in the provided order.
     ```
-    python ingest_files.py
+    python ingest_sitemap.py
     ```
 2. Run the following command to ingest the sitemap:
     ```
-    python ingest.sitemap.py
+    python ingest_files.py
     ```
 3. Run the following command to ingest web links:
     ```
