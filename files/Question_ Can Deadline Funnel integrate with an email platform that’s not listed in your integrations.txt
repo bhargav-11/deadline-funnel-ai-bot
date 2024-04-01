@@ -1,0 +1,49 @@
+﻿Question: Can Deadline Funnel integrate with an email platform that’s not listed in your integrations?
+
+
+Answer: I’ve answered this question recently for someone asking this same question for Systeme.io and if you don’t mind I’m going to use my detailed answer to them for you. But please also let use know what email platform you’re using so we can be aware of what you’re using.
+
+
+Here was my reply:
+
+
+We don’t have a direct integration with Systeme.io, but it does look like they have an integration with Zapier. So you could use our Zapier integration to connect Deadline Funnel and Systeme.io. 
+
+
+You can learn more about how our Zapier integration works here: https://docs.deadlinefunnel.com/en/articles/5447040-how-to-trigger-a-countdown-using-zapier
+
+
+One key piece to make this work is the Email Placeholder. It’s what we use in our email timers and at the end of our Email Links in order to ensure the deadline people see in your emails syncs up properly with the deadline on your page(s).
+
+
+I happen to know the Email Placeholder for Systeme.io is {email}
+
+
+In your emails, you need to use our Email Links to link people to your special offer page(s). And if you want to use an Email Timer, we have an HTML Email Timer Code that also uses the Email 
+
+
+Placeholder to show people their actual deadline.
+
+
+When you create your campaign, you can select ‘Other’ as your Email Provider and that will mean when Email Links and Email Timer Codes are generated, they’re given a default placeholder that looks like this: [email]
+
+
+Here’s an example of an Email Link with the default placeholder:
+https://dfl1.us/s/74f04c97?em=[email]
+
+
+So all you need to do is replace [email] with {email}, so that it looks like this:
+https://dfl1.us/s/74f04c97?em={email}
+
+
+Email Timer Codes work the same way, if this is your Email Timer Code (I’ve bolded the Placeholder):
+
+
+<img style=“display:block;border:none;outline:none;width:400px;opacity:1;max-width:100%” src=“https://dfimage.com/email-image/140681/6IWvhn/1701889135-cf91fc1b-b56d-482c-b70f-1428f6044c98?em=[email]&cjlhC=gNy10” border=“0” width=“400" />
+
+
+You would just replace [email] with {email} so it looks like this:
+<img style=“display:block;border:none;outline:none;width:400px;opacity:1;max-width:100%” src=“https://dfimage.com/email-image/140681/6IWvhn/1701889135-cf91fc1b-b56d-482c-b70f-1428f6044c98?em={email}&cjlhC=gNy10” border=“0” width=“400" />
+
+
+And that will work to keep the deadline properly synced with the deadline you trigger via our Zapier integration.

@@ -1,0 +1,14 @@
+langchain_community==0.0.27
+nest_asyncio
+lxml
+beautifulsoup4
+tqdm
+python-dotenv==1.0.1
+langchain==0.1.11
+langchain-openai==0.0.8
+tiktoken==0.6.0
+openai==1.13.3
+faiss-cpu==1.8.0
+chromadb==0.4.24
+cohere
+pypdf

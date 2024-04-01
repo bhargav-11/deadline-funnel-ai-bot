@@ -1,0 +1,28 @@
+﻿Question: Why isn’t my timer showing on my page?
+
+
+Answer: We need more information before we can give specific suggestions. 
+
+
+It would help us solve this for you if you could provide:
+
+
+1. The name of your campaign
+2. The URL of your page
+3. What landing page builder you’re using
+4. Have you added the Tracking Code to the page? If so, could you please include a screenshot of where it’s been added?
+
+
+In general, there are two things required for the Deadline Funnel timer to show up on a page:
+
+
+Requirement 1: The exact URL of your page needs to be in Deadline Funnel for your campaign. 
+
+
+(Note, some platforms will show you a URL in your admin which is different from the actual URL your visitor sees when they are on your page. The URL you need to use is the exact URL of the page when you view the page as a visitor would.)
+
+
+Requirement 2: The Deadline Funnel “Tracking Code” needs to be on your page. 
+
+
+For more information and specific guides for your landing page builder, see https://docs.deadlinefunnel.com/en/articles/4185210-how-to-add-deadline-funnel-to-your-website

@@ -1,0 +1,19 @@
+﻿Question: How do I clear tracking for a user?
+
+
+Answer: You can do that by following the steps in this article
+https://docs.deadlinefunnel.com/en/articles/4793412-how-to-clear-tracking-for-a-specific-subscriber
+
+
+Click on 'Analytics' in the top menu of your Deadline Funnel dashboard.
+
+
+Type your lead's email into the 'People Tracked' search box or search for their IP address under 'Other' to locate them in your Deadline Funnel campaign tracking.
+
+
+When you find the entry you want to reset, click on the Trash Icon/Delete button.
+
+
+Other options for clearing tracking include:
+* you can either send them a reset link as explained here: https://docs.deadlinefunnel.com/en/articles/4793442-how-to-create-a-public-reset-link 
+* Or you can clear the tracking for everyone in your funnel, as explained here: https://docs.deadlinefunnel.com/en/articles/4793515-how-to-clear-tracking-for-everyone-in-your-deadline-funnel-campaign

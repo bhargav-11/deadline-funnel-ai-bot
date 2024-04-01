@@ -1,0 +1,21 @@
+﻿Question: Why am I being redirected away from my deadline page?
+
+
+Answer: If you’re being redirected away from your offer page, it means your own deadline has expired.
+
+
+Please try clearing your own tracking from your Deadline Funnel campaign.
+
+
+You can do this by going to Edit campaign > Testing > Clear tracking. Please note that in some cases you may also need to clear your browser’s cookies/cache. Sometimes it helps to test in a different browser, too, after you clear your tracking in Deadline Funnel. :slightly_smiling_face:
+
+
+Here’s our guide with more details:
+https://docs.deadlinefunnel.com/en/articles/4793494-how-to-clear-your-tracking-so-you-can-test-your-deadline-funnel-campaign
+
+
+We also have a Preview Mode feature that you can enable in your account:
+https://docs.deadlinefunnel.com/en/articles/4160318-preview-mode
+
+
+You can add your IP address to Preview Mode so that you do not get redirected from any of your pages even after your deadline expires.

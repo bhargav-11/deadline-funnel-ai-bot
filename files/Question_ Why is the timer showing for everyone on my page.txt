@@ -1,0 +1,7 @@
+﻿Question: Why is the timer showing for everyone on my page? Isn’t it supposed to only show for people who are going through my funnel?
+
+
+Answer: Any page with a timer on it will work to trigger the deadline for anyone who lands on that page if they’re not yet being tracked (aka clicking an Email Link in an email). This is the default behavior and cannot be turned of. We use it as a failsafe to prevent people from having unlimited access to your pages.
+
+
+For this reason, we recommend only adding the timer to pages that people will only have access to through your emails. So don’t add it to any pages that are easily accessible on your site, or through ads. People should only have access to the page when they get an email from you with a Deadline Funnel Email Link that leads to that page. This will help to ensure that the timer they see on the page matches the deadline that gets set through the webhook or Zapier zap.

@@ -1,0 +1,14 @@
+﻿Question: Why are my subscribers being redirected away even though they have X days left in their deadline?
+
+
+Answer: There are several reasons why this could be happening. In 99% of cases, our team discovers it’s related to something in the setup of Deadline Funnel that can be resolved. But the specific solution depends on knowing more about your situation.
+
+
+Our team will need to know the following:
+
+
+1. The name of your Deadline Funnel campaign
+2. Email address of 1 or ideally 2 people reporting this issue
+
+
+Thx.
