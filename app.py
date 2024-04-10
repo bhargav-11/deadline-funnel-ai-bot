@@ -9,7 +9,7 @@ from langchain_community.callbacks import get_openai_callback
 from langchain.prompts import PromptTemplate
 from langchain.retrievers.document_compressors import CohereRerank
 from langchain.retrievers import ContextualCompressionRetriever
-from langchain_core.messages import AIMessage, HumanMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 class Colors:
     RED = '\033[91m'
@@ -23,6 +23,8 @@ load_dotenv()
 OPENAI_API_TOKEN = os.getenv('OPENAI_API_KEY')
 embeddings = OpenAIEmbeddings(api_key=OPENAI_API_TOKEN, model="text-embedding-3-large")
 llm = ChatOpenAI(model_name="gpt-4-turbo-preview", temperature=0.4, api_key=OPENAI_API_TOKEN)
+
+llm_3_5 = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.2)
 
 index = FAISS.load_local("embeddings/faiss_index", embeddings, allow_dangerous_deserialization=True)
 
@@ -65,6 +67,16 @@ chain = ConversationalRetrievalChain.from_llm(
 # print(compression_retriever.get_relevant_documents("eqweqweqweq"))
 # print(len(compression_retriever.get_relevant_documents("eqweqweqweq")))
 
+Human_message = """
+Prompt: Given a question, identify and extract the key search term relevant for conducting a search. Focus on identifying main term that are essential for finding specific information related to the query. 
+Keep your answers concise.
+
+Question: {question}
+
+Search Term:
+
+"""
+
 while True:
     chat_history = []
     question = input("Enter your question (type 'exit' to quit): ")
@@ -85,3 +97,16 @@ while True:
     if source_documents:
         for i, document in enumerate(source_documents[:5]):
             print(f"{Colors.CYAN}Source {i+1}: {document.metadata['source']}{Colors.RESET}")
+    
+    # Get the search term
+    search_term_messages = [
+        SystemMessage(
+            content="You are a helpful assistant to extract the key search term"
+        ),
+        HumanMessage(
+            content=Human_message.format(question=question)
+        ),
+    ]
+    search_term = llm_3_5.invoke(search_term_messages)
+    print("\n")
+    print(f"{Colors.RED}Search Term: {search_term.content}{Colors.RESET}")
