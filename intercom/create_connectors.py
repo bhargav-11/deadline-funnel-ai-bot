@@ -2,7 +2,7 @@ import cohere
 from cohere import CreateConnectorServiceAuth
 from cohere.core import RequestOptions
 
-co = cohere.Client('SamZ9jNB7MDCSMirvba3s9LRGkmVfep5olBV4iXV')
+co = cohere.Client('YOUR_COHERE_KEY')
 
 from cohere import AuthTokenType  # Importing the AuthTokenType
 

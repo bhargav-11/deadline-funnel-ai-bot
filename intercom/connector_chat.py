@@ -1,5 +1,5 @@
 import cohere  
-co = cohere.Client('SamZ9jNB7MDCSMirvba3s9LRGkmVfep5olBV4iXV')
+co = cohere.Client('YOUR_COHERE_KEY')
 
 response = co.chat(  
 	message="Please use the connector and reply what is evergreen campaign?",  
