@@ -23,7 +23,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-intercom/
 venv2/
 
 # PyInstaller
@@ -107,6 +106,8 @@ ENV/
 env.bak/
 venv.bak/
 Docs/
+
+intercommisc/
 
 # Spyder project settings
 .spyderproject
